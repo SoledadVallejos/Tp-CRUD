@@ -15,13 +15,19 @@ const controller = {
 			products,
 			toThousand,
 			toDiscount
-			
 		
 		}
 		)
 	},
 	search: (req, res) => { /* recibo los datos del query , los proceso y hago la magia */
 		// Do the magic
+		return res.render('results',{
+			products : products.filter(product => product.name.toLowerCase().includes(req.query.keywords.toLowerCase())),
+			toThousand,
+			toDiscount,
+			keywords : req.query.keywords /* Indica lo que estuve buscando */
+		})
+
 	},
 };
 

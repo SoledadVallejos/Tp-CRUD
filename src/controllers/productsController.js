@@ -31,11 +31,13 @@ const controller = {
 	// Create - Form to create
 	create: (req, res) => {
 		// Do the magic
+		return res.render('product-create-form')
 	},
 	
 	// Create -  Method to store
 	store: (req, res) => {
 		// Do the magic
+		return res.send(req.body)
 	},
 
 	// Update - Form to edit
