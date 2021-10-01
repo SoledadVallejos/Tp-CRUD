@@ -11,11 +11,21 @@ const controller = {
 	// Root - Show all products
 	index: (req, res) => {
 		// Do the magic
+		return res.render('products',{
+			products,
+			toThousand,
+			toDiscount
+		})
 	},
 
 	// Detail - Detail from one product
 	detail: (req, res) => {
 		// Do the magic
+		return res.render('detail', {
+			product : products.find( product => product.id === +req.params.id),
+			toDiscount,
+			toThousand
+		})
 	},
 
 	// Create - Form to create
