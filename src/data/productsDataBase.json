@@ -148,8 +148,8 @@
       "name": "Zapatillas Adidas",
       "price": 12000,
       "discount": 15,
-      "category": "visited",
-      "description": "Zapatillas de rutina, traídas de Perú",
+      "category": "in-sale",
+      "description": "Zapatillas de rutina, traídas desde Brasil. Confort extremo en un calzado muy liviano y deportivo",
       "image": "default-image.png"
    }
 ]

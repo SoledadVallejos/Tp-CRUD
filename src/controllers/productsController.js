@@ -21,6 +21,7 @@ const controller = {
 	// Detail - Detail from one product
 	detail: (req, res) => {
 		// Do the magic
+		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		return res.render('detail', {
 			product: products.find(product => product.id === +req.params.id),
 			toDiscount,
@@ -68,8 +69,8 @@ const controller = {
 	update: (req, res) => {
 		// Do the magic
 		const {name,price,discount,category,description} = req.body;
-		let product = {
-			id : products[products.length - 1].id + 1,
+		let productModified = {
+			id : +req.params.id,
 			name: name.trim(),
 			price: +price,
 			discount: +discount,
@@ -77,11 +78,12 @@ const controller = {
 			description: description.trim(),
 			image: 'default-image.png'
 		}
-		products.push(product)
 
-		fs.writeFileSync(path.join(__dirname, '..', 'data', 'productsDataBase.json'),JSON.stringify(products,null,3), 'utf-8');
+		let productsModified = products.map(product => product.id === +req.params.id ? productModified : product);
+    
+		fs.writeFileSync(path.join(__dirname, '..', 'data', 'productsDataBase.json'),JSON.stringify(productsModified,null,3), 'utf-8');
 
-		res.redirect('/products')
+		res.redirect('/products/detail/' + req.params.id)
 
 	},
 
