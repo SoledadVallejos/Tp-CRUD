@@ -11,7 +11,7 @@ const controller = {
 	// Root - Show all products
 	index: (req, res) => {
 		// Do the magic
-		return res.render('products',{
+		return res.render('products', {
 			products,
 			toThousand,
 			toDiscount
@@ -22,7 +22,7 @@ const controller = {
 	detail: (req, res) => {
 		// Do the magic
 		return res.render('detail', {
-			product : products.find( product => product.id === +req.params.id),
+			product: products.find(product => product.id === +req.params.id),
 			toDiscount,
 			toThousand
 		})
@@ -32,25 +32,61 @@ const controller = {
 	create: (req, res) => {
 		// Do the magic
 		return res.render('product-create-form')
-	},
 	
+	
+	},
+
 	// Create -  Method to store
 	store: (req, res) => {
 		// Do the magic
-		return res.send(req.body)
+		const {name,price,discount,category,description} = req.body;
+		let product = {
+			id : products[products.length - 1].id + 1,
+			name: name.trim(),
+			price: +price,
+			discount: +discount,
+			category,
+			description: description.trim(),
+			image: 'default-image.png'
+		}
+		products.push(product)
+
+		fs.writeFileSync(path.join(__dirname, '..', 'data', 'productsDataBase.json'),JSON.stringify(products,null,3), 'utf-8');
+
+		res.redirect('/products')
+		
 	},
 
 	// Update - Form to edit
 	edit: (req, res) => {
 		// Do the magic
+		return res.render('product-edit-form',{
+			product : products.find(product => product.id === +req.params.id)
+		})
 	},
 	// Update - Method to update
 	update: (req, res) => {
 		// Do the magic
+		const {name,price,discount,category,description} = req.body;
+		let product = {
+			id : products[products.length - 1].id + 1,
+			name: name.trim(),
+			price: +price,
+			discount: +discount,
+			category,
+			description: description.trim(),
+			image: 'default-image.png'
+		}
+		products.push(product)
+
+		fs.writeFileSync(path.join(__dirname, '..', 'data', 'productsDataBase.json'),JSON.stringify(products,null,3), 'utf-8');
+
+		res.redirect('/products')
+
 	},
 
 	// Delete - Delete one product from DB
-	destroy : (req, res) => {
+	destroy: (req, res) => {
 		// Do the magic
 	}
 };
