@@ -1,13 +1,12 @@
-[
-   {
-      "id": 1,
-      "name": "Cafetera Moulinex Dolce Gusto Edited",
-      "price": 50000,
-      "discount": 50,
-      "category": "visited",
-      "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
-      "image": "img-cafetera-moulinex.jpg"
-   },
+[  {
+   "id": 1,
+   "name": "Cafetera Moulinex Dolce Gusto Edited",
+   "price": 50000,
+   "discount": 50,
+   "category": "visited",
+   "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
+   "image": "img-cafetera-moulinex.jpg"
+},
    {
       "id": 2,
       "name": "Macbook Pro 2022",
@@ -145,11 +144,20 @@
    },
    {
       "id": 17,
-      "name": "Zapatillas Adidas",
+      "name": "Zapatillas Cali",
+      "price": 25000,
+      "discount": 15,
+      "category": "visited",
+      "description": "Un estilo deportivo que se convirtió en clásico urbano, los California son uno de los modelos más emblemáticos de CALI. Hemos actualizado los California para la siguiente generación para dar lugar a los Cali. Con ideas del modelo original, los Cali tienen empeine completo de cuero y el clásico modelo de tenis con una suela gruesa progresiva y la onda relajada de la Costa Oeste.",
+      "image": "img-product-1634068244732.jpg"
+   },
+   {
+      "id": 18,
+      "name": "Collar Largo",
       "price": 5000,
       "discount": 5,
-      "category": "in-sale",
-      "description": "Material: Cuero Vacuno",
-      "image": "default-image.png"
+      "category": "visited",
+      "description": "Collar largo plateado de metal",
+      "image": "img-product-1634069761387.jpg"
    }
 ]
