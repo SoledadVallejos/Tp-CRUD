@@ -1,12 +1,13 @@
-[  {
-   "id": 1,
-   "name": "Cafetera Moulinex Dolce Gusto Edited",
-   "price": 50000,
-   "discount": 50,
-   "category": "visited",
-   "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
-   "image": "img-cafetera-moulinex.jpg"
-},
+[
+   {
+      "id": 1,
+      "name": "Cafetera Moulinex Dolce Gusto Edited",
+      "price": 50000,
+      "discount": 50,
+      "category": "visited",
+      "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
+      "image": "img-cafetera-moulinex.jpg"
+   },
    {
       "id": 2,
       "name": "Macbook Pro 2022",
@@ -153,11 +154,30 @@
    },
    {
       "id": 18,
+      "name": "Dije para Collar De Mascotas Gatos",
+      "price": 2000,
+      "discount": 5,
+      "category": "visited",
+      "description": "Collar con dije identificadora.",
+      "image": "img-product-1634091429591.jpg"
+   },
+   {
+      "id": 19,
+      "name": "Moño para Collar De Mascotas Gatos",
+      "price": 2000,
+      "discount": 15,
+      "category": "visited",
+      "description": "Moño rosa pastel para gato, con un toque de glamour.",
+      "image": "img-product-1634092347468.jpg"
+   },
+   {
+      "id": 20,
       "name": "Collar Largo",
       "price": 5000,
       "discount": 5,
-      "category": "visited",
-      "description": "Collar largo plateado de metal",
+      "category": "in-sale",
+      "description": "Collar largo plateado de metal de Dama. El michi no viene incluido.",
       "image": "img-product-1634069761387.jpg"
    }
+
 ]

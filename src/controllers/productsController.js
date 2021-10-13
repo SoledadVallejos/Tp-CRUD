@@ -70,6 +70,7 @@ const controller = {
 	update: (req, res) => {
 		// Do the magic
 		const {name,price,discount,category,description} = req.body;
+		let product = products.find(product => product.id === +req.params.id);
 		let productModified = {
 			id : +req.params.id,
 			name: name.trim(),
@@ -77,7 +78,7 @@ const controller = {
 			discount: +discount,
 			category,
 			description: description.trim(),
-			image: 'default-image.png'
+			image: product.image
 		}
 
 		let productsModified = products.map(product => product.id === +req.params.id ? productModified : product);
