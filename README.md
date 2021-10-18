@@ -19,7 +19,7 @@ En este eMarket se necesitara que sea posible agregar, borrar y modificar produc
 
 -Instalar dependencias ```npm install```
 
--Correr el ambiente local ```nodemon```
+-Correr el ambiente local  ```npm start``` o ```nodemon```
 
 Ejecuta la aplicación en modo de desarrollo.
 Abra http: // localhost: 3000 para verlo en el navegador.
