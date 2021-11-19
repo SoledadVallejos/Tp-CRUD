@@ -90,14 +90,14 @@ const controller = {
 	},
 
 	// Delete - Delete one product from DB
-	destroy: (req, res) => {
-		// Do the magic
-		let productsModified = products.filter(product => product.id !== +req.params.id );
-		fs.writeFileSync(path.join(__dirname, '..', 'data', 'productsDataBase.json'),JSON.stringify(productsModified,null,3), 'utf-8');
-		res.redirect('/products')
+	destroy : (req, res) => {
+		const products = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/productsDataBase.json'), 'utf-8'));
+		
+		let productsEdited = products.filter(product => product.id !== +req.params.id);
 
-		
-		
+        fs.writeFileSync(path.join(__dirname,'..','data','productsDataBase.json'),JSON.stringify(productsEdited,null,3),'utf-8');
+
+        return res.redirect('/products')      
 	}
 };
 

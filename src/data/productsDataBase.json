@@ -163,7 +163,7 @@
    },
    {
       "id": 19,
-      "name": "Moño para Collar De Mascotas Gatos",
+      "name": "Moño Collar De Mascotas Gatos",
       "price": 2000,
       "discount": 15,
       "category": "visited",
@@ -178,6 +178,14 @@
       "category": "in-sale",
       "description": "Collar largo plateado de metal de Dama. El michi no viene incluido.",
       "image": "img-product-1634069761387.jpg"
+   },
+   {
+      "id": 22,
+      "name": "Zapatillas Olivia",
+      "price": 17000,
+      "discount": 5,
+      "category": "in-sale",
+      "description": "Zapatillas Olivia Skate.",
+      "image": "img-product-1637295147136.jpg"
    }
-
 ]
